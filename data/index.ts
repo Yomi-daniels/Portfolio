@@ -92,7 +92,7 @@ export const projects = [
     des: "Marketplace for unique digital assets, empowering creators and collectors.",
     img: "/nftcore.png",
     iconLists: ["/html.png","/css.png","/js.png"],
-    link: "yomi-daniels.github.io/NFT-CORE",
+    link: "https://yomi-daniels.github.io/NFT-CORE",
   },
   {
     id: 4,
@@ -100,7 +100,7 @@ export const projects = [
     des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "apple-15-pro-six.vercel.app",
+    link: "https://apple-15-pro-six.vercel.app",
   },
 ];
 
