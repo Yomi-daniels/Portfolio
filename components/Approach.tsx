@@ -14,14 +14,19 @@ const Approach = () => {
       <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-transparent w-full gap-4 mx-auto px-8">
         <Card
           title="Planning & Strategy"
-          icon={<AceternityIcon order="Phase 1" />}
+          desc=" My approach ensures that every project is built on a foundation of clarity and purpose, leading to a smooth execution and successful outcomes."
+          icon={<AceternityIcon order="Phase 1" img="/planning.jpg" />}
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-emerald-900"
           />
         </Card>
-        <Card title="Analysis" icon={<AceternityIcon order="Phase 2" />}>
+        <Card
+          title="Analysis"
+          desc="we'll dive deep into understanding user behavior, current design trends, and the performance needs of the product. This includes evaluating user feedback, testing site performance, and reviewing data to ensure each feature is aligned with the goals of the project. "
+          icon={<AceternityIcon order="Phase 2" img="/analysis.jpg" />}
+        >
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-black"
@@ -34,7 +39,11 @@ const Approach = () => {
           {/* Radial gradient for the cute fade */}
           <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
         </Card>
-        <Card title="Implementation" icon={<AceternityIcon order="Phase 3" />}>
+        <Card
+          title="Implementation"
+          desc="we'll bring the planned designs and strategies to life with clean, efficient code. We focus on building responsive, accessible, and high-performance interfaces that are both visually appealing and functional across all devices."
+          icon={<AceternityIcon order="Phase 3" img="/implementation.jpg" />}
+        >
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-sky-600"
@@ -47,10 +56,12 @@ const Approach = () => {
 };
 
 const Card = ({
+  desc,
   title,
   icon,
   children,
 }: {
+  desc: string;
   title: string;
   icon: React.ReactNode;
   children?: React.ReactNode;
@@ -79,27 +90,38 @@ const Card = ({
         )}
       </AnimatePresence>
 
-      <div className="relative z-20">
+      <div className="relative h-full">
         <div className="text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full  mx-auto flex items-center justify-center">
           {icon}
         </div>
         <h2 className="dark:text-white text-xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
           {title}
         </h2>
+        <p className="dark:text-white text-sm opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-2 font-normal group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+          {desc}
+        </p>
       </div>
     </div>
   );
 };
 
-const AceternityIcon = ({ order }: { order: string }) => {
+const AceternityIcon = ({ order, img }: { order: string; img: string }) => {
   return (
-    <div>
+    // dont forget to remove borders
+    <div className=" flex flex-col items-center justify-center gap-4 mt-8 absolute top-[20%]">
       <button className="px-8 py-2 rounded-full relative bg-slate-700 text-white text-sm hover:shadow-2xl hover:shadow-white/[0.1] transition duration-200 border border-slate-600">
         <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-teal-500 to-transparent" />
         <span className="relative z-20" key={order}>
           {order}
         </span>
       </button>
+      <div key={img}>
+        <img
+          src={img}
+          alt="approach"
+          className="w-[500px] h-[30vh] object-contain"
+        />
+      </div>
     </div>
   );
 };
