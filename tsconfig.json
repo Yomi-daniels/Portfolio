@@ -12,6 +12,9 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+     "rules": {
+    "react/no-unescaped-entities": "off"
+  },
     "plugins": [
       {
         "name": "next"
