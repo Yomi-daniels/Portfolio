@@ -52,7 +52,7 @@ const Footer = () => {
               <Lottie options={defaultOptions} height={200} width={400} />
             </div>
             <BorderMagic
-              title={copied ? "That's right" : "Contact me now"}
+              title={copied ? `That's right` : "Contact me now"}
               // icon={<FaArrowRightLong />}
               icon={!copied ? <FaArrowRightLong /> : null}
               position="right"
