@@ -8,10 +8,10 @@ import MagicButton from "./ui/MagicButton";
 const Approach = () => {
   return (
     <>
-      <h1 className="heading">
+      <h1 className="heading py-10 ">
         My <span className="text-gray-500">approach</span>
       </h1>
-      <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-transparent w-full gap-4 mx-auto px-8">
+      <div className="py-0 flex flex-col lg:flex-row items-center justify-center bg-transparent w-full gap-4 mx-auto px-8">
         <Card
           title="Planning & Strategy"
           desc=" My approach ensures that every project is built on a foundation of clarity and purpose, leading to a smooth execution and successful outcomes."
@@ -90,7 +90,7 @@ const Card = ({
         )}
       </AnimatePresence>
 
-      <div className="relative h-full">
+      <div className="absolute h-full px-4 top-[5%]">
         <div className="text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full  mx-auto flex items-center justify-center">
           {icon}
         </div>
