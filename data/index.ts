@@ -80,11 +80,11 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Komosu Network",
+    title: " Network",
     des: "Komosu Network is committed to revolutionizing the automotive industry by providing innovative solutions. our dedicated team of experts focuses on building strong relationships with clients, ensuring that they have more time to concentrate on what truly matters to them.",
     img: "/komosu.png",
     iconLists: ["/next.svg", "/gsap.svg","/fm.svg"],
-    link: "https://komosunetwork.vercel.app",
+    link: "https://komosu.vercel.app/",
   },
   {
     id: 3,
