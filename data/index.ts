@@ -101,7 +101,14 @@ export const projects = [
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://apple-15-pro-six.vercel.app",
-  },
+  },{
+    id:5,
+    title:"E-commerce Dashoard",
+    des: "A Beautiful React Dashboard With Syncfusion Components",
+    img:"/dashboard.png",
+    iconLists: ["/re.svg", "/tail.svg", "/three.svg"],
+    link: "react-dashboard-olive-delta.vercel.app"
+  }
 ];
 
 export const testimonials = [
