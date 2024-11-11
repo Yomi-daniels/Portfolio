@@ -107,7 +107,7 @@ export const projects = [
     des: "A Beautiful React Dashboard With Syncfusion Components",
     img:"/dashboard.png",
     iconLists: ["/re.svg", "/tail.svg", "/three.svg"],
-    link: "react-dashboard-olive-delta.vercel.app"
+    link: "https://react-dashboard-olive-delta.vercel.app"
   }
 ];
 
