@@ -68,16 +68,23 @@ export const FloatingNav = ({
       >
         {/* Mobile menu icon */}
         <div className="hidden max-sm:flex absolute items-center gap-12 justify-between">
-          <button className="sm:hidden text-neutral-600 dark:text-neutral-50 hover:text-neutral-500 dark:hover:text-neutral-300">
-            <FaHome size={20} />
-          </button>
-          <button className="sm:hidden text-neutral-600 dark:text-neutral-50 hover:text-neutral-500 dark:hover:text-neutral-300">
-            <FaPhone size={20} />
-          </button>
-          <button className="sm:hidden text-neutral-600 dark:text-neutral-50 hover:text-neutral-500 dark:hover:text-neutral-300">
-            <FaProjectDiagram size={20} />
-          </button>
+          <Link href="/" passHref>
+            <button className="sm:hidden text-neutral-600 dark:text-neutral-50 hover:text-neutral-500 dark:hover:text-neutral-300">
+              <FaHome size={20} />
+            </button>
+          </Link>
+          <Link href="#contact" passHref>
+            <button className="sm:hidden text-neutral-600 dark:text-neutral-50 hover:text-neutral-500 dark:hover:text-neutral-300">
+              <FaPhone size={20} />
+            </button>
+          </Link>
+          <Link href="#projects" passHref>
+            <button className="sm:hidden text-neutral-600 dark:text-neutral-50 hover:text-neutral-500 dark:hover:text-neutral-300">
+              <FaProjectDiagram size={20} />
+            </button>
+          </Link>
         </div>
+
         {navItems.map((navItem: any, idx: number) => (
           <Link
             key={`link=${idx}`}
