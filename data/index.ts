@@ -70,8 +70,17 @@ export const gridItems = [
 ];
 
 export const projects = [
+
   {
-    id: 1,
+    id:1,
+    title:"Zentry",
+    des: " A cutting-edge platform revolutionizing the gaming landscape. Dive into the Metagame, where innovation meets immersive experiences, and explore a dynamic play economy that connects players, creators, and communities like never before.",
+    img:"/Zentry.png",
+    iconLists: ["/re.svg", "/tail.svg","/gsap.svg" ],
+    link: "https://zentry-blue.vercel.app/"
+  },
+  {
+    id: 2,
     title: "AI chatting platform",
     des: "AI platform for creativity, problem-solving, and automation solutions.",
     img: "/brainwave.png",
@@ -79,21 +88,14 @@ export const projects = [
     link: "https://yomi-daniels.github.io/Brainwave/",
   },
   {
-    id: 2,
+    id: 3,
     title: " Network",
     des: "Komosu Network is committed to revolutionizing the automotive industry by providing innovative solutions. our dedicated team of experts focuses on building strong relationships with clients, ensuring that they have more time to concentrate on what truly matters to them.",
     img: "/komosu.png",
     iconLists: ["/next.svg", "/gsap.svg","/fm.svg"],
     link: "https://komosu.vercel.app/",
   },
-  {
-    id: 3,
-    title: "NFT-Core",
-    des: "Marketplace for unique digital assets, empowering creators and collectors.",
-    img: "/nftcore.png",
-    iconLists: ["/html.png","/css.png","/js.png"],
-    link: "https://yomi-daniels.github.io/NFT-CORE",
-  },
+
   {
     id: 4,
     title: "Animated Apple Iphone 3D Website",
@@ -108,6 +110,15 @@ export const projects = [
     img:"/dashboard.png",
     iconLists: ["/re.svg", "/tail.svg", "/three.svg"],
     link: "https://react-dashboard-olive-delta.vercel.app"
+  },
+ 
+  {
+    id: 6,
+    title: "NFT-Core",
+    des: "Marketplace for unique digital assets, empowering creators and collectors.",
+    img: "/nftcore.png",
+    iconLists: ["/html.png","/css.png","/js.png"],
+    link: "https://yomi-daniels.github.io/NFT-CORE",
   }
 ];
 
