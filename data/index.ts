@@ -73,6 +73,15 @@ export const projects = [
 
   {
     id:1,
+    title:"Car Hub",
+    des: " Explore seamless car rental services with Car Hub with imangi studios api and headless ui for seamless functionalities",
+    img:"/Car-Hub.png",
+    iconLists: ["/next.svg", "/tail.svg","/ts.svg","/headless-ui.png","/imagin logo.jpeg" ],
+    link: "https://car-hub-azure-rho.vercel.app/"
+  },
+
+  {
+    id:2,
     title:"Zentry",
     des: " A cutting-edge platform revolutionizing the gaming landscape. Dive into the Metagame, where innovation meets immersive experiences, and explore a dynamic play economy that connects players, creators, and communities like never before.",
     img:"/Zentry.png",
@@ -80,7 +89,7 @@ export const projects = [
     link: "https://zentry-blue.vercel.app/"
   },
   {
-    id: 2,
+    id: 3,
     title: "AI chatting platform",
     des: "AI platform for creativity, problem-solving, and automation solutions.",
     img: "/brainwave.png",
@@ -88,7 +97,7 @@ export const projects = [
     link: "https://yomi-daniels.github.io/Brainwave/",
   },
   {
-    id: 3,
+    id: 4,
     title: " Network",
     des: "Komosu Network is committed to revolutionizing the automotive industry by providing innovative solutions. our dedicated team of experts focuses on building strong relationships with clients, ensuring that they have more time to concentrate on what truly matters to them.",
     img: "/komosu.png",
@@ -97,14 +106,14 @@ export const projects = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "Animated Apple Iphone 3D Website",
     des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://apple-15-pro-six.vercel.app",
   },{
-    id:5,
+    id:6,
     title:"E-commerce Dashoard",
     des: "A Beautiful React Dashboard With Syncfusion Components",
     img:"/dashboard.png",
@@ -113,7 +122,7 @@ export const projects = [
   },
  
   {
-    id: 6,
+    id: 7,
     title: "NFT-Core",
     des: "Marketplace for unique digital assets, empowering creators and collectors.",
     img: "/nftcore.png",
