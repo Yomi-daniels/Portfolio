@@ -1,9 +1,16 @@
+
+'use client'
+import { useState } from "react";
 import { projects } from "@/data";
-import { div } from "three/webgpu";
 import { PinContainer } from "./ui/3d-pin";
 import { FaLocationArrow } from "react-icons/fa";
 
 const RecentProject = () => {
+  const [showAll, setShowAll] = useState(false);
+
+  // Show only first 4 unless "showAll" is true
+  const displayedProjects = showAll ? projects : projects.slice(0, 4);
+
   return (
     <div id="projects" className="py-20">
       <h1 className="heading">
@@ -15,7 +22,7 @@ const RecentProject = () => {
         className="flex flex-wrap items-center justify-center p-4
       gap-x-24 gap-y-8 mt-10"
       >
-        {projects.map(({ id, title, des, iconLists, img, link }) => (
+        {displayedProjects.map(({ id, title, des, iconLists, img, link }) => (
           <div
             key={id}
             className="sm:h-[41rem] lg:min-h-[32.5rem] h-[32rem] flex items-center justify-center sm:w-[570px] w-[80vw] cursor-pointer"
@@ -65,6 +72,18 @@ const RecentProject = () => {
           </div>
         ))}
       </div>
+
+      {/* See More Button */}
+      {projects.length > 4 && (
+        <div className="flex justify-center mt-10">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="px-6 py-2 rounded-full bg-gray-800 text-white hover:bg-gray-700 transition-colors"
+          >
+            {showAll ? "See Less" : "See More"}
+          </button>
+        </div>
+      )}
     </div>
   );
 };

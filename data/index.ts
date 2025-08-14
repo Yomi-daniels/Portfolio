@@ -70,16 +70,16 @@ export const gridItems = [
 ];
 
 export const projects = [
-
   {
-    id:1,
-    title:"Car Hub",
-    des: " Explore seamless car rental services with Car Hub with imangi studios api and headless ui for seamless functionalities",
-    img:"/Car-Hub.png",
-    iconLists: ["/next.svg", "/tail.svg","/ts.svg","/headless-ui.png","/imagin logo.jpeg" ],
-    link: "https://car-hub-azure-rho.vercel.app/"
+    id: 1,
+    title: " Network",
+    des: "Komosu Network is committed to revolutionizing the automotive industry by providing innovative solutions. our dedicated team of experts focuses on building strong relationships with clients, ensuring that they have more time to concentrate on what truly matters to them.",
+    img: "/komosu.png",
+    iconLists: ["/next.svg", "/gsap.svg","/fm.svg"],
+    link: "https://www.komosunetwork.com/",
   },
 
+ 
   {
     id:2,
     title:"Zentry",
@@ -96,14 +96,15 @@ export const projects = [
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "https://yomi-daniels.github.io/Brainwave/",
   },
-  {
-    id: 4,
-    title: " Network",
-    des: "Komosu Network is committed to revolutionizing the automotive industry by providing innovative solutions. our dedicated team of experts focuses on building strong relationships with clients, ensuring that they have more time to concentrate on what truly matters to them.",
-    img: "/komosu.png",
-    iconLists: ["/next.svg", "/gsap.svg","/fm.svg"],
-    link: "https://komosunetwork.com/",
+   {
+    id:4,
+    title:"Car Hub",
+    des: " Explore seamless car rental services with Car Hub with imangi studios api and headless ui for seamless functionalities",
+    img:"/Car-Hub.png",
+    iconLists: ["/next.svg", "/tail.svg","/ts.svg","/headless-ui.png","/imagin logo.jpeg" ],
+    link: "https://car-hub-azure-rho.vercel.app/"
   },
+
 
   {
     id: 5,

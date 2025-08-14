@@ -35,6 +35,7 @@ const config = {
         },
         white: {
           DEFAULT: "#FFF",
+          50:"#F4F4F7",
           100: "#BEC1DD",
           200: "#C1C2D3",
         },
