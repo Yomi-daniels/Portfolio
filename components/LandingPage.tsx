@@ -10,7 +10,7 @@ export function LandingPage() {
   const words = ["DEVELOPER", "CREATOR", "INNOVATOR"];
 
   return (
-    <div className="h-[100vh] bg-transparent text-white relative overflow-hidden">
+    <div className="h-[100vh] bg-transparent text-white relative overflow-hidden ">
       {/* Background Scrolling Words */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div className="relative overflow-hidden w-full">
@@ -48,11 +48,11 @@ export function LandingPage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <p className="text-center md:tracking-tighter md:text-lg lg:text-[1rem] uppercase font-normal">
+              <p className="text-center md:tracking-tighter md:text-lg lg:text-[1rem] uppercase font-normal max-sm:mb-3">
                 Hi, I&apos;m Dev Yoda
               </p>
 
-              <h1 className="text-3xl md:text-4xl lg:text-7xl font-black leading-tight text-white-50">
+              <h1 className="text-3xl md:text-4xl lg:text-7xl sm:text-3xl font-black leading-tight text-white-50">
                 I CREATE, BUILD,
                 <br />
                 DESIGN, DEVELOP,
@@ -77,10 +77,8 @@ export function LandingPage() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <p className="text-base md:text-lg text-gray-300 leading-relaxed">
-                Specialized in React, Next.js, TypeScript, and modern web technologies. I craft responsive, accessible,
-                and performant web applications with clean code and exceptional user experiences. From concept to
-                deployment, I bring digital ideas to life.
-              </p>
+   specialize in React, Next.js, and TypeScript, building fast, responsive, and accessible web apps with clean code and great user experiences.
+</p>
                      <div className="mt-12">
                        <a href="#projects" className="z-10 lg:hidden md:hidden sm:block">
                                    <MagicButton
