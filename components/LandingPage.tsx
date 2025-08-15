@@ -1,9 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaDownload, FaFileDownload, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import MagicButton from "./ui/MagicButton";
 import { MdJoinRight } from "react-icons/md";
+import { FaXTwitter } from "react-icons/fa6";
 
 export function LandingPage() {
   const words = ["DEVELOPER", "CREATOR", "INNOVATOR"];
@@ -40,7 +41,7 @@ export function LandingPage() {
 
       <main className="relative z-10 px-4 md:px-16 pt-12 md:pt-20">
         <div className="space-y-8 md:space-y-16">
-          <div className="flex flex-col lg:flex-row gap-2 lg:gap-16 items-start">
+          <div className="flex flex-col lg:flex-row gap-2 lg:gap-16 items-start ">
             <motion.div
               className="flex flex-col items-start"
               initial={{ opacity: 0, x: -50 }}
@@ -60,7 +61,7 @@ export function LandingPage() {
                 <br />
                 WEB EXPERIENCES
               </h1>
-                <a href="#projects" className="z-10">
+                <a href="#projects" className="z-10 max-sm:hidden">
             <MagicButton
               title="View my work"
               icon={<MdJoinRight />}
@@ -80,6 +81,15 @@ export function LandingPage() {
                 and performant web applications with clean code and exceptional user experiences. From concept to
                 deployment, I bring digital ideas to life.
               </p>
+                     <div className="mt-12">
+                       <a href="#projects" className="z-10 lg:hidden md:hidden sm:block">
+                                   <MagicButton
+                                     title="View my work"
+                                     icon={<MdJoinRight />}
+                                     position="right"
+                                   />
+                                 </a>
+                     </div>
             </motion.div>
           </div>
 
@@ -89,7 +99,7 @@ export function LandingPage() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.4 }}
           >
-            <div className="w-[500px] h-[500px] scale-[2.5] md:w-96 md:h-96 relative opacity-70">
+            <div className="w-[500px] max-sm:w-[400px] h-[500px] scale-[2.5] md:w-96 md:h-96 relative opacity-70 max-sm:scale-[1.6] ">
               <img
                 src="/LCPW-unscreen 1.gif"
                 alt="Abstract Code Visualization"
@@ -104,61 +114,91 @@ export function LandingPage() {
 
 {/* Social Links */}
 <motion.div
-  className="hidden lg:flex fixed right-8 top-1/2 transform -translate-y-1/2 flex-col space-y-6"
+  className="hidden lg:flex fixed right-8 top-[30%] transform -translate-y-1/2 flex-col space-y-6"
   initial={{ opacity: 0, x: 50 }}
   animate={{ opacity: 1, x: 0 }}
   transition={{ duration: 0.8, delay: 0.6 }}
 >
+  {/* Download CV */}
+  
+  <div className="flex flex-col items-center gap-2">
+    <motion.div
+      initial={{ opacity: 0, x: 50 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8, delay: 0.7 }}
+      className="text-xs text-gray-400 transform rotate-90 origin-center text-center"
+    >
+     Download <br /> CV
+    </motion.div>
+    <motion.a
+      href="/Resume.pdf.pdf" // replace with your actual CV path
+      download
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
+      initial={{ opacity: 0, x: 50 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8, delay: 0.65 }}
+    >
+      <FaFileDownload className="text-white text-lg" />
+    </motion.a>
+  </div>
+
   {/* GitHub */}
-  <motion.div
-    initial={{ opacity: 0, x: 50 }}
-    animate={{ opacity: 1, x: 0 }}
-    transition={{ duration: 0.8, delay: 0.7 }}
-    className="text-xs text-gray-400 transform rotate-90 origin-center"
-  >
-    GitHub
-  </motion.div>
-  <motion.a
-    href="https://github.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
-    initial={{ opacity: 0, x: 50 }}
-    animate={{ opacity: 1, x: 0 }}
-    transition={{ duration: 0.8, delay: 0.8 }}
-  >
-    <FaGithub className="text-white text-lg" />
-  </motion.a>
+  <div className="flex flex-col items-center gap-2">
+    <motion.div
+      initial={{ opacity: 0, x: 50 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8, delay: 0.7 }}
+      className="text-xs text-gray-400 transform rotate-90 origin-center"
+    >
+      GitHub
+    </motion.div>
+    <motion.a
+      href="https://github.com/Yomi-daniels"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
+      initial={{ opacity: 0, x: 50 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8, delay: 0.8 }}
+    >
+      <FaGithub className="text-white text-lg" />
+    </motion.a>
+  </div>
 
   {/* LinkedIn */}
-  <motion.div
-    initial={{ opacity: 0, x: 50 }}
-    animate={{ opacity: 1, x: 0 }}
-    transition={{ duration: 0.8, delay: 0.9 }}
-    className="text-xs text-gray-400 transform rotate-90 origin-center mb-8"
-  >
-    LinkedIn
-  </motion.div>
-  <motion.a
-    href="https://linkedin.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
-    initial={{ opacity: 0, x: 50 }}
-    animate={{ opacity: 1, x: 0 }}
-    transition={{ duration: 0.8, delay: 1 }}
-  >
-    <FaLinkedin className="text-white text-lg" />
-  </motion.a>
+  <div className="flex flex-col items-center gap-2">
+    <motion.div
+      initial={{ opacity: 0, x: 50 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8, delay: 0.9 }}
+      className="text-xs text-gray-400 transform rotate-90 origin-center"
+    >
+      LinkedIn
+    </motion.div>
+    <motion.a
+      href="https://www.linkedin.com/in/dev-yoda-a359b2270/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
+      initial={{ opacity: 0, x: 50 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8, delay: 1 }}
+    >
+      <FaLinkedin className="text-white text-lg" />
+    </motion.a>
+  </div>
 
-  {/* Twitter */}
+ {/* Twitter (X) */}
+<div className="flex flex-col items-center gap-2">
   <motion.div
     initial={{ opacity: 0, x: 50 }}
     animate={{ opacity: 1, x: 0 }}
     transition={{ duration: 0.8, delay: 1.1 }}
-    className="text-xs text-gray-400 transform rotate-90 origin-center mb-8"
+    className="text-xs text-gray-400 transform rotate-90 origin-center items-center"
   >
-    Twitter
+    X
   </motion.div>
   <motion.a
     href="https://twitter.com"
@@ -169,8 +209,9 @@ export function LandingPage() {
     animate={{ opacity: 1, x: 0 }}
     transition={{ duration: 0.8, delay: 1.2 }}
   >
-    <FaTwitter className="text-white text-lg" />
+    <FaXTwitter className="text-white text-lg" />
   </motion.a>
+</div>
 </motion.div>
 
 

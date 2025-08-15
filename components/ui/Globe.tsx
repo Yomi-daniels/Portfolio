@@ -102,8 +102,8 @@ export function Globe({ globeConfig, data }: WorldProps) {
     if (!globeRef.current) return;
 
     const globeMaterial = globeRef.current.globeMaterial() as unknown as {
-      color: Color;
-      emissive: Color;
+      color: "#8b5cf6"
+      emissive: "#8b5cf6"
       emissiveIntensity: number;
       shininess: number;
     };

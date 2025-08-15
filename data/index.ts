@@ -72,16 +72,32 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: " Network",
+    title: "Komosu Network",
     des: "Komosu Network is committed to revolutionizing the automotive industry by providing innovative solutions. our dedicated team of experts focuses on building strong relationships with clients, ensuring that they have more time to concentrate on what truly matters to them.",
     img: "/komosu.png",
     iconLists: ["/next.svg", "/gsap.svg","/fm.svg"],
     link: "https://www.komosunetwork.com/",
   },
 
- 
   {
-    id:2,
+    id: 2,
+    title: "Block Connect",
+    des: "Marketplace for unique digital assets, empowering creators and collectors.",
+    img: "/blockconnect.png",
+    iconLists: ["/next.svg","/tail.svg","/appkit.png","/gsap.svg",],
+    link: "https://block-connect-three.vercel.app/",
+  },
+    {
+  id: 4,
+  title: "Whispa AI",
+  des: "A futuristic voice-controlled AI assistant with a sleek, modern interface and real-time speech recognition.",
+  img: "/whispa.png",
+  iconLists: ["/js.png", "/html.png", "/css.png", "/mic.svg"],
+  link: "https://whispa-ai.vercel.app/"
+}
+ ,
+  {
+    id:5,
     title:"Zentry",
     des: " A cutting-edge platform revolutionizing the gaming landscape. Dive into the Metagame, where innovation meets immersive experiences, and explore a dynamic play economy that connects players, creators, and communities like never before.",
     img:"/Zentry.png",
@@ -89,7 +105,7 @@ export const projects = [
     link: "https://zentry-blue.vercel.app/"
   },
   {
-    id: 3,
+    id: 6,
     title: "AI chatting platform",
     des: "AI platform for creativity, problem-solving, and automation solutions.",
     img: "/brainwave.png",
@@ -97,7 +113,15 @@ export const projects = [
     link: "https://yomi-daniels.github.io/Brainwave/",
   },
    {
-    id:4,
+    id:7,
+    title: "Animated Apple Iphone 3D Website",
+    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    img: "/p4.svg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://apple-15-pro-six.vercel.app",
+  },
+   {
+    id:8,
     title:"Car Hub",
     des: " Explore seamless car rental services with Car Hub with imangi studios api and headless ui for seamless functionalities",
     img:"/Car-Hub.png",
@@ -106,30 +130,18 @@ export const projects = [
   },
 
 
+ 
   {
-    id: 5,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://apple-15-pro-six.vercel.app",
-  },{
-    id:6,
+    id:9,
     title:"E-commerce Dashoard",
     des: "A Beautiful React Dashboard With Syncfusion Components",
     img:"/dashboard.png",
     iconLists: ["/re.svg", "/tail.svg", "/three.svg"],
     link: "https://react-dashboard-olive-delta.vercel.app"
   },
+
+
  
-  {
-    id: 7,
-    title: "NFT-Core",
-    des: "Marketplace for unique digital assets, empowering creators and collectors.",
-    img: "/nftcore.png",
-    iconLists: ["/html.png","/css.png","/js.png"],
-    link: "https://yomi-daniels.github.io/NFT-CORE",
-  }
 ];
 
 export const testimonials = [
