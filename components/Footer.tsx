@@ -42,7 +42,7 @@ const Footer = () => {
             Reach out to me today and let's discuss how we can help you reach
             your goals
           </p>
-          <div className="mt-5 relative">
+          <div className="mt-5 relative z-10">
             <div
               className={`absolute -bottom-5 right-0 ${
                 copied ? "block" : "block"

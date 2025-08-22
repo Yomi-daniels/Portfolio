@@ -92,7 +92,7 @@ export const projects = [
   title: "Whispa AI",
   des: "A futuristic voice-controlled AI assistant with a sleek, modern interface and real-time speech recognition.",
   img: "/whispa.png",
-  iconLists: ["/js.png", "/html.png", "/css.png", "/mic.svg"],
+  iconLists: ["/js.png", "/html.png", "/css.png"],
   link: "https://whispa-ai.vercel.app/"
 }
  ,

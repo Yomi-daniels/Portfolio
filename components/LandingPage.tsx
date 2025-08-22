@@ -112,104 +112,104 @@ export function LandingPage() {
 
 {/* Social Links */}
 <motion.div
-  className="hidden lg:flex fixed right-8 top-[30%] transform -translate-y-1/2 flex-col space-y-6"
+  className="hidden lg:flex fixed right-8 top-[30%] transform -translate-y-1/2 flex-col space-y-6 z-[999]"
   initial={{ opacity: 0, x: 50 }}
   animate={{ opacity: 1, x: 0 }}
   transition={{ duration: 0.8, delay: 0.6 }}
 >
-  {/* Download CV */}
-  
-  <div className="flex flex-col items-center gap-2">
+  <div className="relative z-[999]">
+    {/* Download CV */}
+    
+    <div className="flex flex-col items-center gap-2">
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, delay: 0.7 }}
+        className="text-xs text-gray-400 transform rotate-90 origin-center text-center"
+      >
+       Download <br /> CV
+      </motion.div>
+      <motion.a
+        href="/Resume.pdf.pdf" // replace with your actual CV path
+        download
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, delay: 0.65 }}
+      >
+        <FaFileDownload className="text-white text-lg" />
+      </motion.a>
+    </div>
+    {/* GitHub */}
+    <div className="flex flex-col items-center gap-2">
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, delay: 0.7 }}
+        className="text-xs text-gray-400 transform rotate-90 origin-center"
+      >
+        GitHub
+      </motion.div>
+      <motion.a
+        href="https://github.com/Yomi-daniels"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, delay: 0.8 }}
+      >
+        <FaGithub className="text-white text-lg" />
+      </motion.a>
+    </div>
+    {/* LinkedIn */}
+    <div className="flex flex-col items-center gap-2">
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, delay: 0.9 }}
+        className="text-xs text-gray-400 transform rotate-90 origin-center"
+      >
+        LinkedIn
+      </motion.div>
+      <motion.a
+        href="https://www.linkedin.com/in/dev-yoda-a359b2270/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, delay: 1 }}
+      >
+        <FaLinkedin className="text-white text-lg" />
+      </motion.a>
+    </div>
+    
+     {/* Twitter (X) */}
+    <div className="flex flex-col items-center gap-2">
     <motion.div
       initial={{ opacity: 0, x: 50 }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.8, delay: 0.7 }}
-      className="text-xs text-gray-400 transform rotate-90 origin-center text-center"
+      transition={{ duration: 0.8, delay: 1.1 }}
+      className="text-xs text-gray-400 transform rotate-90 origin-center items-center"
     >
-     Download <br /> CV
+      X
     </motion.div>
     <motion.a
-      href="/Resume.pdf.pdf" // replace with your actual CV path
-      download
+      href="https://twitter.com"
       target="_blank"
       rel="noopener noreferrer"
       className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
       initial={{ opacity: 0, x: 50 }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.8, delay: 0.65 }}
+      transition={{ duration: 0.8, delay: 1.2 }}
     >
-      <FaFileDownload className="text-white text-lg" />
+      <FaXTwitter className="text-white text-lg" />
     </motion.a>
+    </div>
   </div>
-
-  {/* GitHub */}
-  <div className="flex flex-col items-center gap-2">
-    <motion.div
-      initial={{ opacity: 0, x: 50 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.8, delay: 0.7 }}
-      className="text-xs text-gray-400 transform rotate-90 origin-center"
-    >
-      GitHub
-    </motion.div>
-    <motion.a
-      href="https://github.com/Yomi-daniels"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
-      initial={{ opacity: 0, x: 50 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.8, delay: 0.8 }}
-    >
-      <FaGithub className="text-white text-lg" />
-    </motion.a>
-  </div>
-
-  {/* LinkedIn */}
-  <div className="flex flex-col items-center gap-2">
-    <motion.div
-      initial={{ opacity: 0, x: 50 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.8, delay: 0.9 }}
-      className="text-xs text-gray-400 transform rotate-90 origin-center"
-    >
-      LinkedIn
-    </motion.div>
-    <motion.a
-      href="https://www.linkedin.com/in/dev-yoda-a359b2270/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
-      initial={{ opacity: 0, x: 50 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.8, delay: 1 }}
-    >
-      <FaLinkedin className="text-white text-lg" />
-    </motion.a>
-  </div>
-
- {/* Twitter (X) */}
-<div className="flex flex-col items-center gap-2">
-  <motion.div
-    initial={{ opacity: 0, x: 50 }}
-    animate={{ opacity: 1, x: 0 }}
-    transition={{ duration: 0.8, delay: 1.1 }}
-    className="text-xs text-gray-400 transform rotate-90 origin-center items-center"
-  >
-    X
-  </motion.div>
-  <motion.a
-    href="https://twitter.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
-    initial={{ opacity: 0, x: 50 }}
-    animate={{ opacity: 1, x: 0 }}
-    transition={{ duration: 0.8, delay: 1.2 }}
-  >
-    <FaXTwitter className="text-white text-lg" />
-  </motion.a>
-</div>
 </motion.div>
 
 
